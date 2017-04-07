@@ -1,0 +1,115 @@
+
+<ion-header>
+
+  <ion-navbar no-border-bottom  color="secondary">
+    <ion-title >Buscar Cliente por:</ion-title>
+ </ion-navbar> 
+ <ion-toolbar no-border-top  color="secondary">
+  	<div padding>
+	  <ion-segment [(ngModel)]="busca">
+	    <ion-segment-button value="dni">
+	      DNI
+	    </ion-segment-button>
+	    <ion-segment-button value="nombre">
+	      NOMBRE
+	    </ion-segment-button>
+	      <ion-segment-button value="apellido">
+	      APELLIDO
+	    </ion-segment-button>
+	  </ion-segment>
+	</div>
+ </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-fab bottom right  >
+    <button ion-fab  (click)="gotoHome()" color="verdeFuerte">
+      <ion-icon name="home"></ion-icon>
+    </button>
+</ion-fab>
+
+  	<div [ngSwitch]="busca">
+
+    	<ion-list *ngSwitchCase="'dni'" no-lines text-center>
+      	  	<ion-list-header no-lines class="top-tittle" padding-top>
+    			<h2 class="top-tittle">BUSCAR CLIENTE POR DNI</h2>
+  		    </ion-list-header>
+
+       		<ion-item padding-bottom>		
+	    		<ion-input type="text" placeholder="Por favor ingrese DNI"
+	    	class="texto_in"></ion-input>
+	  		</ion-item>
+       		<div padding>
+	  			<button  ion-button large full>Buscar</button>
+			</div>
+       </ion-list>
+
+
+	    <ion-list *ngSwitchCase="'nombre'" no-lines text-center>
+      	  	<ion-list-header no-lines padding-top>
+    			<h2 class="top-tittle">BUSCAR CLIENTE POR NOMBRE</h2>
+  		    </ion-list-header>
+
+       		<ion-item padding-bottom>		
+	    		<ion-input type="text" placeholder="Por favor ingrese el nombre"
+	    	class="texto_in"></ion-input>
+	  		</ion-item>
+       		<div padding>
+	  			<button  ion-button large full>Buscar</button>
+			</div>
+        </ion-list>
+
+
+	    <ion-list *ngSwitchCase="'apellido'" no-lines text-center>
+      	  	<ion-list-header no-lines class="top-tittle" padding-top>
+    			<h2 class="top-tittle">BUSCAR CLIENTE POR APELLIDO</h2>
+  		    </ion-list-header>
+
+       		<ion-item padding-bottom>		
+	    		<ion-input type="text" placeholder="Por favor ingrese el apellido"
+	    	class="texto_in"></ion-input>
+	  		</ion-item>
+       		<div padding>
+	  			<button  ion-button large full>Buscar</button>
+			</div>	      
+	    </ion-list>
+
+    </div>
+</ion-content>
+
+
+
+
+
+          <!--	<ion-item>
+	    <ion-thumbnail item-left>
+	          <img src="assets/img/logo2.png">
+	        </ion-thumbnail>       	
+	    	<ion-label fixed >DNI Cliente</ion-label>
+       </ion-item>-->
+
+<!--
+</ion-list>
+<ion-list>
+  <ion-item>
+    <ion-label>Nombre Cliente</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Apellido Cliente</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button block>Buscar</button>
+</div>
+
+-->
+
+

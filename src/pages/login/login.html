@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar color="bankiaMarron">
+    <ion-title>
+      LOGIN COFI-CEDEI
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+ 
+<div padding>
+	
+<ion-list>
+
+	<ion-item>
+	    <ion-label stacked>Ingrese su Codigo Cliente</ion-label>
+	     <ion-input type="text" value=""></ion-input>
+	</ion-item>
+		<ion-item>
+	    <ion-label stacked>Ingrese Contraseña </ion-label>
+	     <ion-input type="password" value=""></ion-input>
+	</ion-item>
+
+</ion-list>
+<p>	
+    <button ion-button large full (click)="login()"
+    color="verdeFuerte">Login</button>
+</p>
+<p> 
+    <button ion-button full large (click)="logout()"
+     color="bankiaVerde2">Logout</button>
+</p>
+
+<p> 
+    <button ion-button full large (click)="gotoHome()"
+     color="bankiaVerde3">HOME</button>
+   </p>
+
+
+</div>
+
+<ion-footer>
+  <ion-toolbar color="bankiaVerde">
+    <p>GRUPO2 MAINFRAME @2017</p>
+    <ion-buttons end>
+      <button ion-button icon-right color="royal">
+        INFO
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+</ion-content>

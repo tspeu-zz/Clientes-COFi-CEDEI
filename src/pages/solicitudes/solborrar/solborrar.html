@@ -1,0 +1,32 @@
+
+<ion-header>
+
+  <ion-navbar color="bankiaVerde2">
+    <ion-title>Dar de Baja Solicitud</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label stacked>Numero Solicitud</ion-label>
+    <ion-input type="number" [(ngModel)]="numsoldRamdon"></ion-input>
+  </ion-item>
+
+  </ion-list>
+
+  <div padding>
+  <button ion-button full large color="second2">Dar de BAJA</button>
+</div>
+
+<ion-fab bottom right  >
+    <button ion-fab  (click)="gotoHome()" color="verdeFuerte">
+      <ion-icon name="home"></ion-icon>
+    </button>
+</ion-fab>
+
+</ion-content>

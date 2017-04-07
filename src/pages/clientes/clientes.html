@@ -1,0 +1,71 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>CLIENTES</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="fondo">
+<ion-fab top right edge >
+    <button ion-fab  (click)="gotoHome()" color="verdeFuerte">
+      <ion-icon name="home"></ion-icon>
+    </button>
+</ion-fab>
+
+<ion-list>
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+<ion-grid>
+  <ion-row>
+    <ion-col col-6>
+    
+      <ion-card (click)="gotoBusca()">
+        <img src="assets/img/lupa.png"/>     
+        <ion-card-content>     
+          <ion-card-title >Buscar Cliente</ion-card-title>
+        </ion-card-content>        
+      </ion-card>
+
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card (click)="gotoALTA()">
+        <img src="assets/img/Handshake.jpg"/>     
+        <ion-card-content>     
+          <ion-card-title>Alta   Cliente</ion-card-title>
+        </ion-card-content>        
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+  <ion-row >
+    <ion-col col-6>
+      <ion-card (click)="gotoActual()">
+
+     <img src="assets/img/update.jpg"/>   
+        <ion-card-content>     
+          <ion-card-title >Update Cliente</ion-card-title>
+        </ion-card-content>        
+      </ion-card>
+
+    </ion-col>
+    <ion-col col-6>
+      <ion-card (click)="gotoBaja()">
+        <img src="assets/img/delete.jpg"/>     
+        <ion-card-content>     
+          <ion-card-title >Baja Cliente</ion-card-title>
+        </ion-card-content>        
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
+
+</ion-list>
+
+
+
+</ion-content>
