@@ -12,19 +12,31 @@ export class ActuaclientePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   fecACtual : string;
-
+  codClieR :number 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ActuaclientePage');
+    this.codClieR = this.getRndInteger(1,10000000);
   }
 
   public event = {
-    month: '1990-02-19',
+    month: '1990-02-19'
     
   }
 
-  genero :string = 'Mujer';
-  tipoD :string = 'DNI';
+datosP  = {
+  genero :  'Mujer',
+  tipoD :  'DNI',
+  NumD :  '123456789A',
+  nacimiento : '1919-02-19',
+  nombre :  'Amparo',
+  apellido :  'Perez',
+  apellido2 :  'Guitierrez',
+  codPostal : '38001',
+  tlfn :  '922100212',
+  ccc : '12345678912345678987' 
+ }
+
 
   todayDate(datetoDay :string) :void{
 	let utc = new Date().toJSON().slice(0,10);
@@ -38,4 +50,7 @@ export class ActuaclientePage {
   	console.log(`go home`);
   	this.navCtrl.setRoot(HomePage);
   }
+  getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+ }
 }

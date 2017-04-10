@@ -1,13 +1,18 @@
 page-clientes {
-
-.fondo{
-background-image: url('../assets/img/corpo.jpg');	
-background-repeat: no-repeat;
-//background-size: 80% ;
-background-attachment: fixed;
-background-position: 20% 20%;
-
-
-}	
-
+    .fondo {
+        background-image: url('../assets/img/corpo.jpg');
+        background-repeat: no-repeat;
+        //background-size: 80% ;
+        background-attachment: fixed;
+        background-position: 20% 20%;
+    }
+    .thum {
+        background-size: 10%;
+    }
+    list-background-color {
+        background-color: transparent;
+    }
+    list-ios-background-color {
+        background-color: transparent;
+    }
 }

@@ -1,20 +1,13 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/v2/theming/
 $font-path: "../assets/fonts";
-
 @import "ionic.globals";
-
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
-
-
-
-
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -22,100 +15,49 @@ $font-path: "../assets/fonts";
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
-
-$colors: (
-  primary:    #795548,
-  secondary:  #35261A,
-  second2:	  #3e2723,
-  dark-2:     #5D4037,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222,
-  errorBlue:  #000082,
-  primary-color-dark:   #5D4037,
-  primary-color:        #795548,
-  primary-color-light:  #D7CCC8,
-  primary-color-text:   #FFFFFF,
-  accent-color:         #CDDC39,
-  primary-text-color:   #212121,
-  secondary-text-color: #757575,
-  divider-color:        #BDBDBD,
-  marron :				#5d4037,
-  verde :				#cddc39,
-  logo:					#AFC309,
-  verdeFuerte:			#c6ff00,
-  bankiaVerde:			#B2C300,
-  bankiaVerde2:			#BCC72F,
-  bankiaVerde3:			#6F7800,
-  bankiaMarron:			#463525,
-  bankiaMarron2:		#35261A			
-
-
-
- ); 
-
-
-$background-color:           #FFFFFF !default;
-$card-md-background-color:    #c6ff00 !default;
-$card-md-title-text-color:    #757575 !default;
+$colors: ( primary: #795548, secondary: #35261A, second2: #3e2723, dark-2: #5D4037, danger: #f53d3d, light: #f4f4f4, dark: #222, errorBlue: #000082, primary-color-dark: #5D4037, primary-color: #795548, primary-color-light: #D7CCC8, primary-color-text: #FFFFFF, accent-color: #CDDC39, primary-text-color: #212121, secondary-text-color: #757575, divider-color: #BDBDBD, marron: #5d4037, verde: #cddc39, logo: #AFC309, verdeFuerte: #c6ff00, bankiaVerde: #B2C300, bankiaVerde2: #BCC72F, bankiaVerde3: #6F7800, bankiaVerde4: #B8C800, bankiaMarron: #463525, bankiaMarron2: #35261A);
+$background-color: #FFFFFF !default;
+$card-md-background-color: #c6ff00 !default;
+$card-md-title-text-color: #757575 !default;
 /// @prop - Background color of the button$colors-md, $colors-md, 
 $button-md-background-color: #B8C800 !default;
-
 /// @prop - Text color of the button
-$button-md-text-color:        #5D4037 !default;
+$button-md-text-color: #5D4037 !default;
 //color-contrast($colors-md, $button-md-background-color) 
 /// @prop - Text color of the activated segment button
-$segment-button-md-text-color-activated:   #c6ff00   !default;
-
+$segment-button-md-text-color-activated: #c6ff00 !default;
 /// @prop - Border color of the activated segment button
 $segment-button-md-border-color-activated: #eeff41 !default;
-$toolbar-md-title-text-color:  #AFC309 ;
-
+$toolbar-md-title-text-color: #AFC309;
+$list-background-color: transparent !default;
+$list-ios-background-color: #eeff41 !default;
+$list-md-background-color:transparent !default;
+$list-wp-background-color:#eeff41 !default;
 /// @prop - Text color of the button
 //$button-md-text-color:       color-contrast($button-md-background-color) !default;
-
 //$list-md-background-color 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
-
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
-
-
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
-
 // App Theme
 // --------------------------------------------------
 // Ionic apps can have different themes applied, which can
 // then be future customized. This import comes last
 // so that the above variables are used and Ionic's
 // default are overridden.
-
 @import "ionic.theme.default";
-
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/v2/ionicons/
-
 @import "ionic.ionicons";
-
-
 // Fonts
 // --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";

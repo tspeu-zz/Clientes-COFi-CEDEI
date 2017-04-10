@@ -1,68 +1,88 @@
-
 <ion-header>
 
-  <ion-navbar color="bankiaVerde">
-    <ion-title>Solicitudes</ion-title>
-  </ion-navbar>
+    <ion-navbar color="bankiaVerde">
+        <ion-title>Solicitudes</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 <ion-content padding class="fondo">
-<ion-fab top right edge >
-    <button ion-fab  (click)="gotoHome()" color="primary">
+    <ion-fab top right edge>
+        <button ion-fab (click)="gotoHome()" color="primary">
       <ion-icon name="home"></ion-icon>
     </button>
-</ion-fab>
-<ion-list>
-<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-<ion-grid>
+    </ion-fab>
+    <ion-list no-lines>
+        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+        <!--<ion-grid>
   <ion-row>
     <ion-col col-6>
-    
-      <ion-card (click)="gotoBusca()" class="cards">
-        <img src="assets/img/b-search.png"/>     
-        <ion-card-content>     
-          <ion-card-title style="color:#B2C300;">Buscar Solicitud</ion-card-title>
-        </ion-card-content>        
-      </ion-card>
-
+    -->
+        <ion-item>
+            <ion-card (click)="gotoBusca()" class="cards">
+                <ion-thumbnail>
+                    <img src="assets/img/b-search.png" />
+                </ion-thumbnail>
+                <ion-card-content>
+                    <ion-card-title style="color:#B2C300;">Buscar Solicitud</ion-card-title>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+        <!--
     </ion-col>
 
     <ion-col col-6>
-      <ion-card (click)="gotoALTA()"  class="cards">
-        <img src="assets/img/b-handshake.png"/>     
-        <ion-card-content>     
-          <ion-card-title style="color:#B2C300;">Alta Solicitud</ion-card-title>
-        </ion-card-content>        
-      </ion-card>
-    </ion-col>
+      -->
+        <ion-item>
+            <ion-card (click)="gotoALTA()" class="cards">
+                <ion-thumbnail>
+                    <img src="assets/img/b-handshake.png" />
+                </ion-thumbnail>
+                <ion-card-content>
+                    <ion-card-title style="color:#B2C300;">Alta Solicitud</ion-card-title>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+
+        <!--   </ion-col>
 
   </ion-row>
 
   <ion-row >
     <ion-col col-6>
-      <ion-card (click)="gotoActual()"  class="cards">
-
-     <img src="assets/img/b-edit.png"/>   
-        <ion-card-content>     
-          <ion-card-title style="color:#B2C300;">Update Solicitud</ion-card-title>
-        </ion-card-content>        
-      </ion-card>
-
+-->
+        <ion-item>
+            <ion-card (click)="gotoActual()" class="cards">
+                <ion-thumbnail>
+                    <img src="assets/img/b-edit.png" />
+                </ion-thumbnail>
+                <ion-card-content>
+                    <ion-card-title style="color:#B2C300;">Update Solicitud</ion-card-title>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+        <!--
     </ion-col>
     <ion-col col-6>
-      <ion-card (click)="gotoBaja()" class="cards">
-        <img src="assets/img/b-delete.png"/>     
-        <ion-card-content>     
-          <ion-card-title style="color:#B2C300;">Baja Solicitud</ion-card-title>
-        </ion-card-content>        
-      </ion-card>
+-->
+        <ion-item>
+            <ion-card (click)="gotoBaja()" class="cards">
+                <ion-thumbnail>
+                    <img src="assets/img/b-delete.png" />
+                </ion-thumbnail>
+                <ion-card-content>
+                    <ion-card-title style="color:#B2C300;">Baja Solicitud</ion-card-title>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+
+        <!--      
     </ion-col>
 
   </ion-row>
 </ion-grid>
-
-</ion-list>
+-->
+    </ion-list>
 
 
 </ion-content>
